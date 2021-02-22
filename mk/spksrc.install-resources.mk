@@ -23,8 +23,8 @@ DIST_EXT      = $(PKG_EXT)
 
 #####
 
-ifneq ($(REQ_KERNEL),)
-  @$(error install-resources cannot be used when REQ_KERNEL is set)
+ifneq ($(REQUIRE_KERNEL),)
+  @$(error install-resources cannot be used when REQUIRE_KERNEL is set)
 endif
 
 #####
@@ -96,7 +96,7 @@ $(DIGESTS_FILE): download
 include ../../mk/spksrc.dependency-tree.mk
 
 .PHONY: all-archs
-all-archs: $(addprefix arch-,$(AVAILABLE_ARCHS))
+all-archs: $(addprefix arch-,$(AVAILABLE_TOOLCHAINS))
 
 ####
 

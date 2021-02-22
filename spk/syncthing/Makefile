@@ -6,8 +6,7 @@ DSM_UI_DIR = app
 
 DEPENDS = cross/busybox cross/$(SPK_NAME)
 
-UNSUPPORTED_ARCHS = $(PPC_ARCHES)
-GENERIC_ARCHS = ARM7
+UNSUPPORTED_ARCHS = $(PPC_ARCHS)
 
 MAINTAINER = Safihre
 DESCRIPTION = Automatically sync files via secure, distributed technology.
@@ -15,7 +14,7 @@ DESCRIPTION_FRE = Synchronisation automatique de fichiers via une technologie s√
 RELOAD_UI = yes
 DISPLAY_NAME = Syncthing
 CHANGELOG = "Update to upstream version 1.7.1."
-HOMEPAGE = http://www.syncthing.net
+HOMEPAGE = https://www.syncthing.net
 LICENSE = MPLv2.0
 STARTABLE = yes
 
